@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hobbies | Adam Klein</title>
+
+    <!-- Link to stylesheet -->
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+
+    <!-- Links to import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header molecule -->
+    <header>
+        <div id="navbar">
+            <a href="index.html" id="title">
+                <h1>Adam Klein</h1>
+            </a>
+            <!-- mark current page-link as 'current-page' class, if applicable -->
+            <a href="about.html" class="page-link">
+                <h3>ABOUT</h3>
+            </a>
+            <a href="hobbies.html" class="page-link current-page">
+                <h3>HOBBIES</h3>
+            </a>
+        </div>
+        
+        <!-- Rectangles below header text-->
+        <div id="left-header-rectangle"></div>
+        <div id="right-header-rectangle"></div>
+    </header>
+
+    <div class="main-content">
+        <!-- Hobby Card molecule -->
+        <div class="hobby-card">
+
+            <!-- Label atom -->
+            <h2 class="label">Disc Golf</h2>
+
+            <!-- Hobby content molecule -->
+            <div class="hobby-content">
+                <!-- Image -->
+                <img src="images/hobbies/throwing-disc-1.jpg" alt="Throwing a disc part 1">
+                <img src="images/hobbies/throwing-disc-2.jpg" alt="Throwing a disc part 2">
+
+                <!-- Section header -->
+                <h3>Sample Section Header</h3>
+
+                <!-- Text -->
+                <p>
+                    This is some sample text about the hobby of disc golf.
+                </p>
+            </div>
+        </div>
+
+        <!-- Hobby Card molecule -->
+        <div class="hobby-card">
+           
+            <!-- Label atom -->
+            <h2 class="label">Cooking</h2>
+
+            <!-- Hobby content molecule -->
+            <div class="hobby-content">
+                <!-- Image -->
+                <img src="images/hobbies/cooking.jpg" alt="Adam cooking">
+
+                <!-- Section header -->
+                <h3>Sample Section Header</h3>
+
+                <!-- Text -->
+                <p>
+                    Here's some additional sample text, this time about the hobby of cooking.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer molecule -->
+    <footer>
+        <p>
+            &copy; Katie Klein <script>document.write(new Date().getFullYear());</script>
+        </p>
+    </footer>
+
+
+</body>
+</html>

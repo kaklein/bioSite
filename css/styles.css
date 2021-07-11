@@ -1,0 +1,172 @@
+/* Page styling */
+html {
+    background-color: #363636;
+}
+
+
+/* General font styling */
+h1 {
+    font-family: 'Lato', Verdana, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #FFB579;
+}
+
+h2 {
+    font-family: 'Lato', Verdana, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+h3 {
+    font-family: 'Lato', Verdana, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+h4 {
+    font-family: 'Lato', Verdana, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color:#FFB579;
+}
+
+p {
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+
+/* Header Molecule */
+#title {
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.page-link {
+    text-decoration:none;
+    color: #9C9C9C;
+    padding-left: 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #363636;
+    top: 0;
+}
+
+header #navbar {
+    margin-top: 35px;
+}
+
+#title h1, .page-link h3 {
+    display: inline;
+}
+
+.main-content {
+    margin-top: 150px;
+}
+
+#navbar a.current-page {
+    color: white;
+}
+
+#left-header-rectangle {
+    height: 25px;
+    width: 14%;
+    float: left;
+    background-color: #168571;
+    margin-bottom: 10px;
+}
+
+#right-header-rectangle {
+    height: 25px;
+    width: 85%;
+    float: right;
+    background-color: #16DB93;
+    margin-bottom: 10px;
+}
+
+
+/* Title-card molecule */
+.title-card {
+    height: 700px;
+    width: 700px;
+    padding: 20px;
+    margin: auto;
+}
+
+.title-card img {
+    padding: 10px;
+    width: 500px;
+    float: right;
+}
+
+.title-card-text h4 {
+    color: #FFB579;
+    margin-bottom: 2px;
+}
+
+.title-card-text h2 {
+    color: #FFB579;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* Bio-card molecule */
+.bio-card {
+    padding: 20px;
+    width: auto;
+    max-width: 1020px;
+    margin: auto;
+}
+
+.bio-card img {
+    padding: 15px;
+    width: 300px;
+    float: left;
+}
+
+/* Hobby-card molecule */
+.hobby-card {
+    margin: auto;
+}
+
+.hobby-content {
+    border: 1px solid #16DB93;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.hobby-content img {
+    width: 400px;
+}
+
+.hobby-content h3 {
+    color: #FFB579;
+}
+
+/* Label atom */
+.label {
+    color: white;
+    background-color: #168571;
+    width: fit-content;
+    padding: 8px;
+    border: 1px solid #16DB93;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+/* Footer molecule */
+footer {
+    width: 140px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #9C9C9C;
+    font-style: italic;
+}
