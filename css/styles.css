@@ -37,6 +37,14 @@ p {
     color: white;
 }
 
+figcaption {
+    font-family: 'Lato', Verdana, Arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+
+}
+
 
 /* Header Organism */
 #title {
