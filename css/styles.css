@@ -38,7 +38,7 @@ p {
 }
 
 
-/* Header Molecule */
+/* Header Organism */
 #title {
     text-decoration: none;
     padding-left: 30px;
@@ -129,27 +129,27 @@ header #navbar {
     float: left;
 }
 
-/* Hobby-card molecule */
-.hobby-card {
+/* Tab card molecule */
+.tab-card {
     margin: auto;
 }
 
-.hobby-content {
+.tab-card-content {
     border: 1px solid #16DB93;
     border-radius: 10px;
     padding: 20px;
 }
 
-.hobby-content img {
+.tab-card-content img {
     width: 400px;
 }
 
-.hobby-content h3 {
+.tab-card-content h3 {
     color: #FFB579;
 }
 
-/* Label atom */
-.label {
+/* Tab atom */
+.tab {
     color: white;
     background-color: #168571;
     width: fit-content;
