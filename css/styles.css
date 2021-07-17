@@ -4,7 +4,7 @@ html {
 }
 
 
-/* General font styling */
+/* General styling */
 h1 {
     font-family: 'Lato', Verdana, Arial, sans-serif;
     font-weight: 700;
@@ -21,7 +21,7 @@ h2 {
 h3 {
     font-family: 'Lato', Verdana, Arial, sans-serif;
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 h4 {
@@ -37,25 +37,32 @@ p {
     color: white;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 figcaption {
     font-family: 'Lato', Verdana, Arial, sans-serif;
     font-weight: 300;
     font-style: italic;
     color: white;
+}
 
+figcaption a, p a {
+    color:#FFB579;
+    text-decoration: none;
+}
+
+img {
+    border: 8px solid #FFB579;
 }
 
 
 /* Header Organism */
 #title {
     text-decoration: none;
-    padding-left: 30px;
-}
-
-.page-link {
-    text-decoration:none;
-    color: #9C9C9C;
-    padding-left: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 header {
@@ -65,20 +72,23 @@ header {
     top: 0;
 }
 
-header #navbar {
+/* Navbar molecule */
+#navbar {
     margin-top: 35px;
 }
 
-#title h1, .page-link h3 {
-    display: inline;
-}
-
-.main-content {
-    margin-top: 150px;
+#navbar .page-link {
+    text-decoration:none;
+    color: #9C9C9C;
+    padding-left: 20px;
 }
 
 #navbar a.current-page {
     color: white;
+}
+
+#title h1, .page-link h3 {
+    display: inline;
 }
 
 #left-header-rectangle {
@@ -97,6 +107,10 @@ header #navbar {
     margin-bottom: 10px;
 }
 
+/* Main content organism */
+.main-content {
+    margin-top: 150px;
+}
 
 /* Title-card molecule */
 .title-card {
@@ -107,7 +121,7 @@ header #navbar {
 }
 
 .title-card img {
-    padding: 10px;
+    margin: 10px;
     width: 500px;
     float: right;
 }
@@ -132,28 +146,17 @@ header #navbar {
 }
 
 .bio-card img {
-    padding: 15px;
     width: 300px;
     float: left;
+    margin: 15px;
 }
 
-/* Tab card molecule */
+/* Tab Card organism */
 .tab-card {
+    width: 80%;
+    min-width: 460px;
+    max-width: 1000px;
     margin: auto;
-}
-
-.tab-card-content {
-    border: 1px solid #16DB93;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.tab-card-content img {
-    width: 400px;
-}
-
-.tab-card-content h3 {
-    color: #FFB579;
 }
 
 /* Tab atom */
@@ -167,11 +170,45 @@ header #navbar {
     margin-left: 10px;
 }
 
+/* Tab card content molecule */
+.tab-card-content {
+    border: 1px solid #16DB93;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+/* Figure-text card molecule (used in tab-card)*/
+.figure-text-card {
+    width: 100%;
+    margin: auto;
+}
+
+.figure-text-card figure {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.figure-text-card figure img {
+    width: 400px;
+    height: 300px;
+}
+
+.figure-text-card figure figcaption {
+    max-width: 400px;
+    margin: auto;
+}
+
 /* Footer molecule */
 footer {
     width: 140px;
     margin: auto;
     margin-top: 50px;
+    position: relative;
+    margin-top: 175px;
+    bottom: 0;
 }
 
 footer p {
