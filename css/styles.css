@@ -59,60 +59,87 @@ img {
 
 
 /* Header Organism */
-#title {
-    text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    height: 105px;
-    background: #363636;
-    top: 0;
-}
-
-/* Navbar molecule */
 #navbar {
-    margin-top: 35px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #363636;
+    display: grid;
+    grid-template-columns: 250px 10px auto;
 }
 
-#navbar .page-link {
-    text-decoration:none;
-    color: #9C9C9C;
-    padding-left: 20px;
+#navbar-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 105px;
 }
 
-#navbar .page-link:hover {
-    border: 1px solid #16DB93;
+#navbar-left-content {
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
 }
 
-#navbar a.current-page {
-    color: white;
+#navbar-left-content-link {
+    text-decoration: none;
 }
 
-#title h1, .page-link h3 {
+#navbar-left-content-link h1 {
     display: inline;
 }
 
 #left-header-rectangle {
     height: 25px;
-    width: 14%;
-    float: left;
+    width: 250px;
     background-color: #168571;
+}
+
+#navbar-right {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 105px;
+}
+
+#navbar-right-content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 #right-header-rectangle {
     height: 25px;
-    width: 85%;
-    float: right;
+    width: 100%;
     background-color: #16DB93;
+}
+
+.navbar-right-content-link {
+    text-decoration: none;
+}
+
+.navbar-right-content-link h3 {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #9C9C9C;
+}
+
+.navbar-right-content-link:hover {
+    text-decoration: none;
+}
+
+.navbar-right-content-link h3:hover {
+    border: 1px solid #16DB93;
+    color: white;
+}
+
+.current-page h3 {
+    color: white;
 }
 
 /* Main content organism */
 .main-content {
-    margin-top: 150px;
+    margin-top: 130px;
 }
 
 /* Title-card molecule */
@@ -157,7 +184,7 @@ header {
 
 /* Tab Card organism */
 .tab-card {
-    width: 80%;
+    width: 90%;
     min-width: 460px;
     max-width: 1000px;
     margin: auto;
@@ -241,10 +268,14 @@ header {
     color: #9C9C9C;
     font-size: 18px;
     text-decoration: none;
+    padding: 5px;
+    border: 1px solid #9C9C9C;
 }
 
 .back-to-top a:hover {
     color: #FFB579;
+    padding: 5px;
+    border: 1px solid #FFB579;
 }
 
 #top-of-page {
