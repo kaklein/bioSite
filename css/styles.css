@@ -194,12 +194,13 @@ img {
 .tab {
     color: white;
     background-color: #168571;
-    width: fit-content;
-    padding: 8px;
     border-top: 1px solid #16DB93;
     border-right: 1px solid #16DB93;
     border-left: 1px solid #16DB93;
     margin-bottom: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
 }
 
 /* Tab card content molecule */
