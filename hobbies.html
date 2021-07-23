@@ -17,21 +17,23 @@
     <header>
         <!-- Navbar molecule -->
         <div id="navbar">
-            <a href="index.html" id="title">
-                <h1>Adam Klein</h1>
-            </a>
-            <!-- mark current page-link as 'current-page' class, if applicable -->
-            <a href="about.html" class="page-link">
-                <h3>ABOUT</h3>
-            </a>
-            <a href="hobbies.html" class="page-link current-page">
-                <h3>HOBBIES</h3>
-            </a>
+            <!-- left side of navbar -->
+            <div id="navbar-left">
+                <div id="navbar-left-content">
+                    <a href="index.html" id="navbar-left-content-link"><h1>Adam Klein</h1></a>
+                    <div id="left-header-rectangle"></div>
+                </div>
+            </div>
+
+            <!-- right side of navbar -->
+            <div id="navbar-right">
+                <div id="navbar-right-content">
+                    <a href="about.html" class="navbar-right-content-link"><h3>ABOUT</h3></a>
+                    <a href="hobbies.html" class="navbar-right-content-link current-page"><h3>HOBBIES</h3></a>
+                    <div id="right-header-rectangle"></div>
+                </div>
+            </div>
         </div>
-        
-        <!-- Rectangles below header text-->
-        <div id="left-header-rectangle"></div>
-        <div id="right-header-rectangle"></div>
     </header>
 
     <!-- Top of page anchor -->
