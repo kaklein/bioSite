@@ -3,7 +3,6 @@ html {
     background-color: #363636;
 }
 
-
 /* General styling */
 h1 {
     font-family: 'Lato', Verdana, Arial, sans-serif;
@@ -192,6 +191,7 @@ img {
     min-width: 460px;
     max-width: 1000px;
     margin: auto;
+    margin-top: 150px;
 }
 
 /* Tab atom */
@@ -237,25 +237,45 @@ img {
     margin: auto;
 }
 
-/* Side navbar molecule */
-#side-navbar {
+/* Secondary navbar molecule */
+
+#secondary-navbar {
     position: fixed;
-    left: 20px;
-    top: 120px;
+    top: 105px;
+    text-align: center;
+    background-color: #363636;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #16DB93;
 }
 
-#side-navbar a {
-    color: white;
+#secondary-navbar h1, #secondary-navbar h3 {
+    display: inline;
+    padding: 15px;
+}
+
+#secondary-navbar h1 a, #secondary-navbar h3 a {
     text-decoration: none;
 }
 
-#side-navbar a:hover {
+#secondary-navbar h3 a {
+    color: white;
+    font-size: 20px;
+}
+
+#secondary-navbar h1 a {
+    color:#FFB579;
+}
+
+#secondary-navbar a:hover {
     color: #FFB579;
 }
 
 .anchor {
     display: block;
-    height: 130px;
+    height: 150px;
     margin-top: -130px;
     visibility: hidden;
 }
@@ -264,12 +284,13 @@ img {
 .back-to-top {
     text-align: right;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 20px;
 }
 
 .back-to-top a {
     color: #9C9C9C;
+    background-color: #363636;
     font-size: 18px;
     text-decoration: none;
     padding: 5px;
